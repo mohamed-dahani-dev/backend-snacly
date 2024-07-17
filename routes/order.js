@@ -18,7 +18,7 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 
 router.post("/place", authMiddleware, async (req, res) => {
   // url of frontend
-  const frontend_url = "http://localhost:5173";
+  const frontend_url = "https://frontend-snacly.onrender.com";
 
   try {
     // create a new order
